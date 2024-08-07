@@ -13,7 +13,7 @@ display_welcome() {
   echo -e "${BLUE}[+] =============================================== [+]${NC}"
   echo -e "${BLUE}[+]                                                 [+]${NC}"
   echo -e "${BLUE}[+]                AUTO INSTALLER THEMA             [+]${NC}"
-  echo -e "${BLUE}[+]                  © RuztanXS                [+]${NC}"
+  echo -e "${BLUE}[+]                  © RuztanXD                     [+]${NC}"
   echo -e "${BLUE}[+]                                                 [+]${NC}"
   echo -e "${RED}[+] =============================================== [+]${NC}"
   echo -e ""
@@ -58,7 +58,7 @@ install_jq() {
 check_token() {
   echo -e "                                                       "
   echo -e "${BLUE}[+] =============================================== [+]${NC}"
-  echo -e "${BLUE}[+]               KUNCI BY RUZTANXD             [+]${NC}"
+  echo -e "${BLUE}[+]               KUNCI BY OM                       [+]${NC}"
   echo -e "${BLUE}[+] =============================================== [+]${NC}"
   echo -e "                                                       "
   echo -e "${YELLOW}MASUKAN AKSES TOKEN :${NC}"
@@ -78,7 +78,7 @@ install_theme() {
   while true; do
     echo -e "                                                       "
     echo -e "${BLUE}[+] =============================================== [+]${NC}"
-    echo -e "${BLUE}[+]                   SELECT THEME                  [+]${NC}"
+    echo -e "${BLUE}[+]                   PILIH THEME                   [+]${NC}"
     echo -e "${BLUE}[+] =============================================== [+]${NC}"
     echo -e "                                                       "
     echo -e "PILIH THEME YANG INGIN DI INSTALL"
@@ -224,7 +224,7 @@ uninstall_theme() {
   echo -e "${BLUE}[+]                    DELETE THEME                 [+]${NC}"
   echo -e "${BLUE}[+] =============================================== [+]${NC}"
   echo -e "                                                       "
-  bash <(curl https://raw.githubusercontent.com/VallzHost/installer-theme/main/repair.sh)
+  bash <(curl https://raw.githubusercontent.com/RuztanHosting/RuzPrivat/main/repair.sh)
   echo -e "                                                       "
   echo -e "${GREEN}[+] =============================================== [+]${NC}"
   echo -e "${GREEN}[+]                 DELETE THEME SUKSES             [+]${NC}"
@@ -280,7 +280,7 @@ exit 0
 create_node() {
   echo -e "                                                       "
   echo -e "${BLUE}[+] =============================================== [+]${NC}"
-  echo -e "${BLUE}[+]                    CRRATE NODE                 [+]${NC}"
+  echo -e "${BLUE}[+]                    CREATE NODE                 [+]${NC}"
   echo -e "${BLUE}[+] =============================================== [+]${NC}"
   echo -e "                                                       "
   #!/bin/bash
@@ -421,7 +421,7 @@ while true; do
   clear
   echo -e "                                                       "
   echo -e "${BLUE}[+] =============================================== [+]${NC}"
-  echo -e "${BLUE}[+]                   SELECT OPTION                 [+]${NC}"
+  echo -e "${BLUE}[+]                   MENU INSTALL                  [+]${NC}"
   echo -e "${BLUE}[+] =============================================== [+]${NC}"
   echo -e "                                                       "
   echo -e "SELECT OPTION :"
