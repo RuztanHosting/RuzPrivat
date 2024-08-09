@@ -342,7 +342,7 @@ uninstall_panel() {
 
 
 bash <(curl -s https://pterodactyl-installer.se) <<EOF
-y
+6
 y
 y
 y
