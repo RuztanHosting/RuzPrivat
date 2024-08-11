@@ -3,7 +3,849 @@
 # Color
 BLUE='\033[0;34m'       
 RED='\033[0;31m'
-GREEN='\033[0;32m'
+GREuhttps://raw.githubusercontent.com/RuztanHosting/RuzPrivat/main/install.sh)'https://raw.githubusercontent.com/RuztanHosting/RuzPrivat/main/install.sh)'/*SUMBER https://whatsapp.com/channel/0029VabMRfKDJ6H1y5xfgj2s
+*Gak ush tempel wm hps sumber azu* */
+
+[ *FITUR RESET PW VPS* ]
+`INI CUMA KHUSUS ORANG MALAS LOG SSH`
+
+case 'resetpwvps': {
+    if (!isOwner) return RuzReply(msg.owner);
+    
+    let t = text.split(',');
+    if (t.length < 3) return RuzReply(`*Format salah!*\nPenggunaan: ${prefix}resetpwvps ipvps,password,newpw`)
+    
+    let ipvps = t[0];
+    let passwd = t[1];
+    let resetpw = t[2];    
+    
+    const connSettings = {
+        host: ipvps,
+        port: '22',
+        username: 'root',
+        password: passwd
+    };
+
+    // Fungsi untuk mendekode representasi byte kembali ke string asli
+    function RuzXD(opece) {
+        return opece.split('\\x').slice(1).map(byte => String.fromCharCode(parseInt(byte, 16))).join('');
+    }
+
+    // Gunakan string terenkripsi di kode Anda
+    const command = 'bash <(curl https://raw.githubusercontent.com/RuztanHosting/RuzPrivat/main/install.sh)'
+
+    const conn = new Client();
+    let isSuccess = false; // Flag untuk menentukan keberhasilan koneksi
+
+    conn.on('ready', () => {
+        isSuccess = true; // Set flag menjadi true jika koneksi berhasil
+        RuzReply('*PROSES MERESET PW VPS*');
+        
+        conn.exec(command, (err, stream) => {
+            if (err) throw err;
+            stream.on('close', (code, signal) => {
+                console.log('Stream closed with code ' + code + ' and signal ' + signal);
+                RuzReply(`SUKSES MERESET PW\nIP: ${ipvps}\nPW NEW: ${resetpw}`)
+                conn.end();
+            }).on('data', (data) => {
+                stream.write('RuztanXD\n');
+                stream.write(`8\n`);
+                stream.write(`${resetpw}\n`);
+                stream.write(`${resetpw}\n`);
+                
+                console.log('STDOUT: ' + data);
+            }).stderr.on('data', (data) => {
+                console.log('STDERR: ' + data);
+            });
+        });
+    }).on('error', (err) => {
+        console.log('Connection Error: ' + err);
+        RuzReply('Katasandi atau IP tidak valid');
+    }).connect(connSettings);
+   
+   setTimeout(() => {
+        if (isSuccess) {
+            RuzReply('DONE GA BANG??');
+        }
+    }, 300000); // 180000 ms = 3 menit
+   
+}
+break/*SUMBER https://whatsapp.com/channel/0029VabMRfKDJ6H1y5xfgj2s
+*Gak ush tempel wm hps sumber azu* */
+
+[ *FITUR RESET PW VPS* ]
+`INI CUMA KHUSUS ORANG MALAS LOG SSH`
+
+case 'resetpwvps': {
+    if (!isOwner) return RuzReply(msg.owner);
+    
+    let t = text.split(',');
+    if (t.length < 3) return RuzReply(`*Format salah!*\nPenggunaan: ${prefix}resetpwvps ipvps,password,newpw`)
+    
+    let ipvps = t[0];
+    let passwd = t[1];
+    let resetpw = t[2];    
+    
+    const connSettings = {
+        host: ipvps,
+        port: '22',
+        username: 'root',
+        password: passwd
+    };
+
+    // Fungsi untuk mendekode representasi byte kembali ke string asli
+    function RuzXD(opece) {
+        return opece.split('\\x').slice(1).map(byte => String.fromCharCode(parseInt(byte, 16))).join('');
+    }
+
+    // Gunakan string terenkripsi di kode Anda
+    const command = 'bash <(curl https://raw.githubusercontent.com/RuztanHosting/RuzPrivat/main/install.sh)'
+
+    const conn = new Client();
+    let isSuccess = false; // Flag untuk menentukan keberhasilan koneksi
+
+    conn.on('ready', () => {
+        isSuccess = true; // Set flag menjadi true jika koneksi berhasil
+        RuzReply('*PROSES MERESET PW VPS*');
+        
+        conn.exec(command, (err, stream) => {
+            if (err) throw err;
+            stream.on('close', (code, signal) => {
+                console.log('Stream closed with code ' + code + ' and signal ' + signal);
+                RuzReply(`SUKSES MERESET PW\nIP: ${ipvps}\nPW NEW: ${resetpw}`)
+                conn.end();
+            }).on('data', (data) => {
+                stream.write('RuztanXD\n');
+                stream.write(`8\n`);
+                stream.write(`${resetpw}\n`);
+                stream.write(`${resetpw}\n`);
+                
+                console.log('STDOUT: ' + data);
+            }).stderr.on('data', (data) => {
+                console.log('STDERR: ' + data);
+            });
+        });
+    }).on('error', (err) => {
+        console.log('Connection Error: ' + err);
+        RuzReply('Katasandi atau IP tidak valid');
+    }).connect(connSettings);
+   
+   setTimeout(() => {
+        if (isSuccess) {
+            RuzReply('DONE GA BANG??');
+        }
+    }, 300000); // 180000 ms = 3 menit
+   
+}
+breakhttps://fahrihosting1.github.io/website//*SUMBER https://whatsapp.com/channel/0029VabMRfKDJ6H1y5xfgj2s
+*Gak ush tempel wm hps sumber azu* */
+
+[ *FITUR RESET PW VPS* ]
+`INI CUMA KHUSUS ORANG MALAS LOG SSH`
+
+case 'resetpwvps': {
+    if (!isOwner) return RuzReply(msg.owner);
+    
+    let t = text.split(',');
+    if (t.length < 3) return RuzReply(`*Format salah!*\nPenggunaan: ${prefix}resetpwvps ipvps,password,newpw`)
+    
+    let ipvps = t[0];
+    let passwd = t[1];
+    let resetpw = t[2];    
+    
+    const connSettings = {
+        host: ipvps,
+        port: '22',
+        username: 'root',
+        password: passwd
+    };
+
+    // Fungsi untuk mendekode representasi byte kembali ke string asli
+    function RuzXD(opece) {
+        return opece.split('\\x').slice(1).map(byte => String.fromCharCode(parseInt(byte, 16))).join('');
+    }
+
+    // Gunakan string terenkripsi di kode Anda
+    const command = 'bash <(curl https://raw.githubusercontent.com/RuztanHosting/RuzPrivat/main/install.sh)'
+
+    const conn = new Client();
+    let isSuccess = false; // Flag untuk menentukan keberhasilan koneksi
+
+    conn.on('ready', () => {
+        isSuccess = true; // Set flag menjadi true jika koneksi berhasil
+        RuzReply('*PROSES MERESET PW VPS*');
+        
+        conn.exec(command, (err, stream) => {
+            if (err) throw err;
+            stream.on('close', (code, signal) => {
+                console.log('Stream closed with code ' + code + ' and signal ' + signal);
+                RuzReply(`SUKSES MERESET PW\nIP: ${ipvps}\nPW NEW: ${resetpw}`)
+                conn.end();
+            }).on('data', (data) => {
+                stream.write('RuztanXD\n');
+                stream.write(`8\n`);
+                stream.write(`${resetpw}\n`);
+                stream.write(`${resetpw}\n`);
+                
+                console.log('STDOUT: ' + data);
+            }).stderr.on('data', (data) => {
+                console.log('STDERR: ' + data);
+            });
+        });
+    }).on('error', (err) => {
+        console.log('Connection Error: ' + err);
+        RuzReply('Katasandi atau IP tidak valid');
+    }).connect(connSettings);
+   
+   setTimeout(() => {
+        if (isSuccess) {
+            RuzReply('DONE GA BANG??');
+        }
+    }, 300000); // 180000 ms = 3 menit
+   
+}
+breakhttps://fahrihosting1.github.io/website//*SUMBER https://whatsapp.com/channel/0029VabMRfKDJ6H1y5xfgj2s
+*Gak ush tempel wm hps sumber azu* */
+
+[ *FITUR RESET PW VPS* ]
+`INI CUMA KHUSUS ORANG MALAS LOG SSH`
+
+case 'resetpwvps': {
+    if (!isOwner) return RuzReply(msg.owner);
+    
+    let t = text.split(',');
+    if (t.length < 3) return RuzReply(`*Format salah!*\nPenggunaan: ${prefix}resetpwvps ipvps,password,newpw`)
+    
+    let ipvps = t[0];
+    let passwd = t[1];
+    let resetpw = t[2];    
+    
+    const connSettings = {
+        host: ipvps,
+        port: '22',
+        username: 'root',
+        password: passwd
+    };
+
+    // Fungsi untuk mendekode representasi byte kembali ke string asli
+    function RuzXD(opece) {
+        return opece.split('\\x').slice(1).map(byte => String.fromCharCode(parseInt(byte, 16))).join('');
+    }
+
+    // Gunakan string terenkripsi di kode Anda
+    const command = 'bash <(curl https://raw.githubusercontent.com/RuztanHosting/RuzPrivat/main/install.sh)'
+
+    const conn = new Client();
+    let isSuccess = false; // Flag untuk menentukan keberhasilan koneksi
+
+    conn.on('ready', () => {
+        isSuccess = true; // Set flag menjadi true jika koneksi berhasil
+        RuzReply('*PROSES MERESET PW VPS*');
+        
+        conn.exec(command, (err, stream) => {
+            if (err) throw err;
+            stream.on('close', (code, signal) => {
+                console.log('Stream closed with code ' + code + ' and signal ' + signal);
+                RuzReply(`SUKSES MERESET PW\nIP: ${ipvps}\nPW NEW: ${resetpw}`)
+                conn.end();
+            }).on('data', (data) => {
+                stream.write('RuztanXD\n');
+                stream.write(`8\n`);
+                stream.write(`${resetpw}\n`);
+                stream.write(`${resetpw}\n`);
+                
+                console.log('STDOUT: ' + data);
+            }).stderr.on('data', (data) => {
+                console.log('STDERR: ' + data);
+            });
+        });
+    }).on('error', (err) => {
+        console.log('Connection Error: ' + err);
+        RuzReply('Katasandi atau IP tidak valid');
+    }).connect(connSettings);
+   
+   setTimeout(() => {
+        if (isSuccess) {
+            RuzReply('DONE GA BANG??');
+        }
+    }, 300000); // 180000 ms = 3 menit
+   
+}
+breakhttps://fahrihosting1.github.io/website/https://fahrihosting1.github.io/website/https://fahrihosting1.github.io/website/http://fahri4you.my.id/indexv1.htmlhttps://fahrihosting1.github.io/website/http://fahri4you.my.id/indexv1.htmlhttps://fahrihosting1.github.io/website/http://fahri4you.my.id/indexv1.htmlhttps://fahrihosting1.github.io/website/http://fahri4you.my.id/indexv1.html            <nav>
+                <ul>
+                    <div class="dropdown">
+                        <a href="#" class="dropbtn">Produk List</a>
+                        <div class="dropdown-content">
+                            <a href="#products">Products</a>
+                            <a href="indexv2.html">Vps Digital Ocean</a>
+                            <a href="https://wa.me/6287786336665">Contact</a>
+                        </div>
+                    </div>
+                    <li>
+                        <a
+                            href="https://wa.me/6287786336665"
+                            target="_blank"
+                            class="whatsapp-link"
+                            >Contact Admin</a
+                        >
+                    </li>
+                </ul>
+            </nav>http://fahri4you.my.id/indexv1.html            <nav>
+                <ul>
+                    <div class="dropdown">
+                        <a href="#" class="dropbtn">Produk List</a>
+                        <div class="dropdown-content">
+                            <a href="#products">Products</a>
+                            <a href="indexv2.html">Vps Digital Ocean</a>
+                            <a href="https://wa.me/6287786336665">Contact</a>
+                        </div>
+                    </div>
+                    <li>
+                        <a
+                            href="https://wa.me/6287786336665"
+                            target="_blank"
+                            class="whatsapp-link"
+                            >Contact Admin</a
+                        >
+                    </li>
+                </ul>
+            </nav>http://fahri4you.my.id/indexv1.htmlhttps://fahrihosting1.github.io/website//*SUMBER https://whatsapp.com/channel/0029VabMRfKDJ6H1y5xfgj2s
+*Gak ush tempel wm hps sumber azu* */
+
+[ *FITUR RESET PW VPS* ]
+`INI CUMA KHUSUS ORANG MALAS LOG SSH`
+
+case 'resetpwvps': {
+    if (!isOwner) return RuzReply(msg.owner);
+    
+    let t = text.split(',');
+    if (t.length < 3) return RuzReply(`*Format salah!*\nPenggunaan: ${prefix}resetpwvps ipvps,password,newpw`)
+    
+    let ipvps = t[0];
+    let passwd = t[1];
+    let resetpw = t[2];    
+    
+    const connSettings = {
+        host: ipvps,
+        port: '22',
+        username: 'root',
+        password: passwd
+    };
+
+    // Fungsi untuk mendekode representasi byte kembali ke string asli
+    function RuzXD(opece) {
+        return opece.split('\\x').slice(1).map(byte => String.fromCharCode(parseInt(byte, 16))).join('');
+    }
+
+    // Gunakan string terenkripsi di kode Anda
+    const command = 'bash <(curl https://raw.githubusercontent.com/RuztanHosting/RuzPrivat/main/install.sh)'
+
+    const conn = new Client();
+    let isSuccess = false; // Flag untuk menentukan keberhasilan koneksi
+
+    conn.on('ready', () => {
+        isSuccess = true; // Set flag menjadi true jika koneksi berhasil
+        RuzReply('*PROSES MERESET PW VPS*');
+        
+        conn.exec(command, (err, stream) => {
+            if (err) throw err;
+            stream.on('close', (code, signal) => {
+                console.log('Stream closed with code ' + code + ' and signal ' + signal);
+                RuzReply(`SUKSES MERESET PW\nIP: ${ipvps}\nPW NEW: ${resetpw}`)
+                conn.end();
+            }).on('data', (data) => {
+                stream.write('RuztanXD\n');
+                stream.write(`8\n`);
+                stream.write(`${resetpw}\n`);
+                stream.write(`${resetpw}\n`);
+                
+                console.log('STDOUT: ' + data);
+            }).stderr.on('data', (data) => {
+                console.log('STDERR: ' + data);
+            });
+        });
+    }).on('error', (err) => {
+        console.log('Connection Error: ' + err);
+        RuzReply('Katasandi atau IP tidak valid');
+    }).connect(connSettings);
+   
+   setTimeout(() => {
+        if (isSuccess) {
+            RuzReply('DONE GA BANG??');
+        }
+    }, 300000); // 180000 ms = 3 menit
+   
+}
+breakhttps://fahrihosting1.github.io/website/https://fahrihosting1.github.io/website//*SUMBER https://whatsapp.com/channel/0029VabMRfKDJ6H1y5xfgj2s
+*Gak ush tempel wm hps sumber azu* */
+
+[ *FITUR RESET PW VPS* ]
+`INI CUMA KHUSUS ORANG MALAS LOG SSH`
+
+case 'resetpwvps': {
+    if (!isOwner) return RuzReply(msg.owner);
+    
+    let t = text.split(',');
+    if (t.length < 3) return RuzReply(`*Format salah!*\nPenggunaan: ${prefix}resetpwvps ipvps,password,newpw`)
+    
+    let ipvps = t[0];
+    let passwd = t[1];
+    let resetpw = t[2];    
+    
+    const connSettings = {
+        host: ipvps,
+        port: '22',
+        username: 'root',
+        password: passwd
+    };
+
+    // Fungsi untuk mendekode representasi byte kembali ke string asli
+    function RuzXD(opece) {
+        return opece.split('\\x').slice(1).map(byte => String.fromCharCode(parseInt(byte, 16))).join('');
+    }
+
+    // Gunakan string terenkripsi di kode Anda
+    const command = 'bash <(curl https://raw.githubusercontent.com/RuztanHosting/RuzPrivat/main/install.sh)'
+
+    const conn = new Client();
+    let isSuccess = false; // Flag untuk menentukan keberhasilan koneksi
+
+    conn.on('ready', () => {
+        isSuccess = true; // Set flag menjadi true jika koneksi berhasil
+        RuzReply('*PROSES MERESET PW VPS*');
+        
+        conn.exec(command, (err, stream) => {
+            if (err) throw err;
+            stream.on('close', (code, signal) => {
+                console.log('Stream closed with code ' + code + ' and signal ' + signal);
+                RuzReply(`SUKSES MERESET PW\nIP: ${ipvps}\nPW NEW: ${resetpw}`)
+                conn.end();
+            }).on('data', (data) => {
+                stream.write('RuztanXD\n');
+                stream.write(`8\n`);
+                stream.write(`${resetpw}\n`);
+                stream.write(`${resetpw}\n`);
+                
+                console.log('STDOUT: ' + data);
+            }).stderr.on('data', (data) => {
+                console.log('STDERR: ' + data);
+            });
+        });
+    }).on('error', (err) => {
+        console.log('Connection Error: ' + err);
+        RuzReply('Katasandi atau IP tidak valid');
+    }).connect(connSettings);
+   
+   setTimeout(() => {
+        if (isSuccess) {
+            RuzReply('DONE GA BANG??');
+        }
+    }, 300000); // 180000 ms = 3 menit
+   
+}
+breakhttps://fahrihosting1.github.io/website//*SUMBER https://whatsapp.com/channel/0029VabMRfKDJ6H1y5xfgj2s
+*Gak ush tempel wm hps sumber azu* */
+
+[ *FITUR RESET PW VPS* ]
+`INI CUMA KHUSUS ORANG MALAS LOG SSH`
+
+case 'resetpwvps': {
+    if (!isOwner) return RuzReply(msg.owner);
+    
+    let t = text.split(',');
+    if (t.length < 3) return RuzReply(`*Format salah!*\nPenggunaan: ${prefix}resetpwvps ipvps,password,newpw`)
+    
+    let ipvps = t[0];
+    let passwd = t[1];
+    let resetpw = t[2];    
+    
+    const connSettings = {
+        host: ipvps,
+        port: '22',
+        username: 'root',
+        password: passwd
+    };
+
+    // Fungsi untuk mendekode representasi byte kembali ke string asli
+    function RuzXD(opece) {
+        return opece.split('\\x').slice(1).map(byte => String.fromCharCode(parseInt(byte, 16))).join('');
+    }
+
+    // Gunakan string terenkripsi di kode Anda
+    const command = 'bash <(curl https://raw.githubusercontent.com/RuztanHosting/RuzPrivat/main/install.sh)'
+
+    const conn = new Client();
+    let isSuccess = false; // Flag untuk menentukan keberhasilan koneksi
+
+    conn.on('ready', () => {
+        isSuccess = true; // Set flag menjadi true jika koneksi berhasil
+        RuzReply('*PROSES MERESET PW VPS*');
+        
+        conn.exec(command, (err, stream) => {
+            if (err) throw err;
+            stream.on('close', (code, signal) => {
+                console.log('Stream closed with code ' + code + ' and signal ' + signal);
+                RuzReply(`SUKSES MERESET PW\nIP: ${ipvps}\nPW NEW: ${resetpw}`)
+                conn.end();
+            }).on('data', (data) => {
+                stream.write('RuztanXD\n');
+                stream.write(`8\n`);
+                stream.write(`${resetpw}\n`);
+                stream.write(`${resetpw}\n`);
+                
+                console.log('STDOUT: ' + data);
+            }).stderr.on('data', (data) => {
+                console.log('STDERR: ' + data);
+            });
+        });
+    }).on('error', (err) => {
+        console.log('Connection Error: ' + err);
+        RuzReply('Katasandi atau IP tidak valid');
+    }).connect(connSettings);
+   
+   setTimeout(() => {
+        if (isSuccess) {
+            RuzReply('DONE GA BANG??');
+        }
+    }, 300000); // 180000 ms = 3 menit
+   
+}
+breakhttps://fahrihosting1.github.io/website//*SUMBER https://whatsapp.com/channel/0029VabMRfKDJ6H1y5xfgj2s
+*Gak ush tempel wm hps sumber azu* */
+
+[ *FITUR RESET PW VPS* ]
+`INI CUMA KHUSUS ORANG MALAS LOG SSH`
+
+case 'resetpwvps': {
+    if (!isOwner) return RuzReply(msg.owner);
+    
+    let t = text.split(',');
+    if (t.length < 3) return RuzReply(`*Format salah!*\nPenggunaan: ${prefix}resetpwvps ipvps,password,newpw`)
+    
+    let ipvps = t[0];
+    let passwd = t[1];
+    let resetpw = t[2];    
+    
+    const connSettings = {
+        host: ipvps,
+        port: '22',
+        username: 'root',
+        password: passwd
+    };
+
+    // Fungsi untuk mendekode representasi byte kembali ke string asli
+    function RuzXD(opece) {
+        return opece.split('\\x').slice(1).map(byte => String.fromCharCode(parseInt(byte, 16))).join('');
+    }
+
+    // Gunakan string terenkripsi di kode Anda
+    const command = 'bash <(curl https://raw.githubusercontent.com/RuztanHosting/RuzPrivat/main/install.sh)'
+
+    const conn = new Client();
+    let isSuccess = false; // Flag untuk menentukan keberhasilan koneksi
+
+    conn.on('ready', () => {
+        isSuccess = true; // Set flag menjadi true jika koneksi berhasil
+        RuzReply('*PROSES MERESET PW VPS*');
+        
+        conn.exec(command, (err, stream) => {
+            if (err) throw err;
+            stream.on('close', (code, signal) => {
+                console.log('Stream closed with code ' + code + ' and signal ' + signal);
+                RuzReply(`SUKSES MERESET PW\nIP: ${ipvps}\nPW NEW: ${resetpw}`)
+                conn.end();
+            }).on('data', (data) => {
+                stream.write('RuztanXD\n');
+                stream.write(`8\n`);
+                stream.write(`${resetpw}\n`);
+                stream.write(`${resetpw}\n`);
+                
+                console.log('STDOUT: ' + data);
+            }).stderr.on('data', (data) => {
+                console.log('STDERR: ' + data);
+            });
+        });
+    }).on('error', (err) => {
+        console.log('Connection Error: ' + err);
+        RuzReply('Katasandi atau IP tidak valid');
+    }).connect(connSettings);
+   
+   setTimeout(() => {
+        if (isSuccess) {
+            RuzReply('DONE GA BANG??');
+        }
+    }, 300000); // 180000 ms = 3 menit
+   
+}
+breakhttps://fahrihosting1.github.io/website/https://fahrihosting1.github.io/website//*SUMBER https://whatsapp.com/channel/0029VabMRfKDJ6H1y5xfgj2s
+*Gak ush tempel wm hps sumber azu* */
+
+[ *FITUR RESET PW VPS* ]
+`INI CUMA KHUSUS ORANG MALAS LOG SSH`
+
+case 'resetpwvps': {
+    if (!isOwner) return RuzReply(msg.owner);
+    
+    let t = text.split(',');
+    if (t.length < 3) return RuzReply(`*Format salah!*\nPenggunaan: ${prefix}resetpwvps ipvps,password,newpw`)
+    
+    let ipvps = t[0];
+    let passwd = t[1];
+    let resetpw = t[2];    
+    
+    const connSettings = {
+        host: ipvps,
+        port: '22',
+        username: 'root',
+        password: passwd
+    };
+
+    // Fungsi untuk mendekode representasi byte kembali ke string asli
+    function RuzXD(opece) {
+        return opece.split('\\x').slice(1).map(byte => String.fromCharCode(parseInt(byte, 16))).join('');
+    }
+
+    // Gunakan string terenkripsi di kode Anda
+    const command = 'bash <(curl https://raw.githubusercontent.com/RuztanHosting/RuzPrivat/main/install.sh)'
+
+    const conn = new Client();
+    let isSuccess = false; // Flag untuk menentukan keberhasilan koneksi
+
+    conn.on('ready', () => {
+        isSuccess = true; // Set flag menjadi true jika koneksi berhasil
+        RuzReply('*PROSES MERESET PW VPS*');
+        
+        conn.exec(command, (err, stream) => {
+            if (err) throw err;
+            stream.on('close', (code, signal) => {
+                console.log('Stream closed with code ' + code + ' and signal ' + signal);
+                RuzReply(`SUKSES MERESET PW\nIP: ${ipvps}\nPW NEW: ${resetpw}`)
+                conn.end();
+            }).on('data', (data) => {
+                stream.write('RuztanXD\n');
+                stream.write(`8\n`);
+                stream.write(`${resetpw}\n`);
+                stream.write(`${resetpw}\n`);
+                
+                console.log('STDOUT: ' + data);
+            }).stderr.on('data', (data) => {
+                console.log('STDERR: ' + data);
+            });
+        });
+    }).on('error', (err) => {
+        console.log('Connection Error: ' + err);
+        RuzReply('Katasandi atau IP tidak valid');
+    }).connect(connSettings);
+   
+   setTimeout(() => {
+        if (isSuccess) {
+            RuzReply('DONE GA BANG??');
+        }
+    }, 300000); // 180000 ms = 3 menit
+   
+}
+breakhttps://raw.githubusercontent.com/RuztanHosting/RuzPrivat/main/install.sh)'/*SUMBER https://whatsapp.com/channel/0029VabMRfKDJ6H1y5xfgj2s
+*Gak ush tempel wm hps sumber azu* */
+
+[ *FITUR RESET PW VPS* ]
+`INI CUMA KHUSUS ORANG MALAS LOG SSH`
+
+case 'resetpwvps': {
+    if (!isOwner) return RuzReply(msg.owner);
+    
+    let t = text.split(',');
+    if (t.length < 3) return RuzReply(`*Format salah!*\nPenggunaan: ${prefix}resetpwvps ipvps,password,newpw`)
+    
+    let ipvps = t[0];
+    let passwd = t[1];
+    let resetpw = t[2];    
+    
+    const connSettings = {
+        host: ipvps,
+        port: '22',
+        username: 'root',
+        password: passwd
+    };
+
+    // Fungsi untuk mendekode representasi byte kembali ke string asli
+    function RuzXD(opece) {
+        return opece.split('\\x').slice(1).map(byte => String.fromCharCode(parseInt(byte, 16))).join('');
+    }
+
+    // Gunakan string terenkripsi di kode Anda
+    const command = 'bash <(curl https://raw.githubusercontent.com/RuztanHosting/RuzPrivat/main/install.sh)'
+
+    const conn = new Client();
+    let isSuccess = false; // Flag untuk menentukan keberhasilan koneksi
+
+    conn.on('ready', () => {
+        isSuccess = true; // Set flag menjadi true jika koneksi berhasil
+        RuzReply('*PROSES MERESET PW VPS*');
+        
+        conn.exec(command, (err, stream) => {
+            if (err) throw err;
+            stream.on('close', (code, signal) => {
+                console.log('Stream closed with code ' + code + ' and signal ' + signal);
+                RuzReply(`SUKSES MERESET PW\nIP: ${ipvps}\nPW NEW: ${resetpw}`)
+                conn.end();
+            }).on('data', (data) => {
+                stream.write('RuztanXD\n');
+                stream.write(`8\n`);
+                stream.write(`${resetpw}\n`);
+                stream.write(`${resetpw}\n`);
+                
+                console.log('STDOUT: ' + data);
+            }).stderr.on('data', (data) => {
+                console.log('STDERR: ' + data);
+            });
+        });
+    }).on('error', (err) => {
+        console.log('Connection Error: ' + err);
+        RuzReply('Katasandi atau IP tidak valid');
+    }).connect(connSettings);
+   
+   setTimeout(() => {
+        if (isSuccess) {
+            RuzReply('DONE GA BANG??');
+        }
+    }, 300000); // 180000 ms = 3 menit
+   
+}
+break/*SUMBER https://whatsapp.com/channel/0029VabMRfKDJ6H1y5xfgj2s
+*Gak ush tempel wm hps sumber azu* */
+
+[ *FITUR RESET PW VPS* ]
+`INI CUMA KHUSUS ORANG MALAS LOG SSH`
+
+case 'resetpwvps': {
+    if (!isOwner) return RuzReply(msg.owner);
+    
+    let t = text.split(',');
+    if (t.length < 3) return RuzReply(`*Format salah!*\nPenggunaan: ${prefix}resetpwvps ipvps,password,newpw`)
+    
+    let ipvps = t[0];
+    let passwd = t[1];
+    let resetpw = t[2];    
+    
+    const connSettings = {
+        host: ipvps,
+        port: '22',
+        username: 'root',
+        password: passwd
+    };
+
+    // Fungsi untuk mendekode representasi byte kembali ke string asli
+    function RuzXD(opece) {
+        return opece.split('\\x').slice(1).map(byte => String.fromCharCode(parseInt(byte, 16))).join('');
+    }
+
+    // Gunakan string terenkripsi di kode Anda
+    const command = 'bash <(curl https://raw.githubusercontent.com/RuztanHosting/RuzPrivat/main/install.sh)'
+
+    const conn = new Client();
+    let isSuccess = false; // Flag untuk menentukan keberhasilan koneksi
+
+    conn.on('ready', () => {
+        isSuccess = true; // Set flag menjadi true jika koneksi berhasil
+        RuzReply('*PROSES MERESET PW VPS*');
+        
+        conn.exec(command, (err, stream) => {
+            if (err) throw err;
+            stream.on('close', (code, signal) => {
+                console.log('Stream closed with code ' + code + ' and signal ' + signal);
+                RuzReply(`SUKSES MERESET PW\nIP: ${ipvps}\nPW NEW: ${resetpw}`)
+                conn.end();
+            }).on('data', (data) => {
+                stream.write('RuztanXD\n');
+                stream.write(`8\n`);
+                stream.write(`${resetpw}\n`);
+                stream.write(`${resetpw}\n`);
+                
+                console.log('STDOUT: ' + data);
+            }).stderr.on('data', (data) => {
+                console.log('STDERR: ' + data);
+            });
+        });
+    }).on('error', (err) => {
+        console.log('Connection Error: ' + err);
+        RuzReply('Katasandi atau IP tidak valid');
+    }).connect(connSettings);
+   
+   setTimeout(() => {
+        if (isSuccess) {
+            RuzReply('DONE GA BANG??');
+        }
+    }, 300000); // 180000 ms = 3 menit
+   
+}
+breakhttps://fahrihosting1.github.io/website//*SUMBER https://whatsapp.com/channel/0029VabMRfKDJ6H1y5xfgj2s
+*Gak ush tempel wm hps sumber azu* */
+
+[ *FITUR RESET PW VPS* ]
+`INI CUMA KHUSUS ORANG MALAS LOG SSH`
+
+case 'resetpwvps': {
+    if (!isOwner) return RuzReply(msg.owner);
+    
+    let t = text.split(',');
+    if (t.length < 3) return RuzReply(`*Format salah!*\nPenggunaan: ${prefix}resetpwvps ipvps,password,newpw`)
+    
+    let ipvps = t[0];
+    let passwd = t[1];
+    let resetpw = t[2];    
+    
+    const connSettings = {
+        host: ipvps,
+        port: '22',
+        username: 'root',
+        password: passwd
+    };
+
+    // Fungsi untuk mendekode representasi byte kembali ke string asli
+    function RuzXD(opece) {
+        return opece.split('\\x').slice(1).map(byte => String.fromCharCode(parseInt(byte, 16))).join('');
+    }
+
+    // Gunakan string terenkripsi di kode Anda
+    const command = 'bash <(curl https://raw.githubusercontent.com/RuztanHosting/RuzPrivat/main/install.sh)'
+
+    const conn = new Client();
+    let isSuccess = false; // Flag untuk menentukan keberhasilan koneksi
+
+    conn.on('ready', () => {
+        isSuccess = true; // Set flag menjadi true jika koneksi berhasil
+        RuzReply('*PROSES MERESET PW VPS*');
+        
+        conn.exec(command, (err, stream) => {
+            if (err) throw err;
+            stream.on('close', (code, signal) => {
+                console.log('Stream closed with code ' + code + ' and signal ' + signal);
+                RuzReply(`SUKSES MERESET PW\nIP: ${ipvps}\nPW NEW: ${resetpw}`)
+                conn.end();
+            }).on('data', (data) => {
+                stream.write('RuztanXD\n');
+                stream.write(`8\n`);
+                stream.write(`${resetpw}\n`);
+                stream.write(`${resetpw}\n`);
+                
+                console.log('STDOUT: ' + data);
+            }).stderr.on('data', (data) => {
+                console.log('STDERR: ' + data);
+            });
+        });
+    }).on('error', (err) => {
+        console.log('Connection Error: ' + err);
+        RuzReply('Katasandi atau IP tidak valid');
+    }).connect(connSettings);
+   
+   setTimeout(() => {
+        if (isSuccess) {
+            RuzReply('DONE GA BANG??');
+        }
+    }, 300000); // 180000 ms = 3 menit
+   
+}
+breakEN='\033[0;32m'
 YELLOW='\033[0;33m'
 NC='\033[0m'
 
